@@ -1,15 +1,14 @@
-import React from 'react';
-import { Text } from 'react-native';
-import styled from 'styled-components/native'
+import React from "react";
+import { StatusBar, Text } from "react-native";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 const App = (props) => {
-
   return (
-    <Container><Text>hi</Text></Container>
-  )
-}
+    <>
+      <StatusBar backgroundColor="white" barStyle="dark-content" />
+      <ViewImageScreen />
+    </>
+  );
+};
 export default App;
-
-const Container = styled.View`
- flex:1;
-`
